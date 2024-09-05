@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Lista-Tarefa-TIAF",
-    "slug": "Lista-Tarefa-TIAF",
+    "name": "Lista-Tarefas-TIAF",
+    "slug": "Lista-Tarefas-TIAF",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
