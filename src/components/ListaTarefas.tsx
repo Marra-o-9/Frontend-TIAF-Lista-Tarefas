@@ -4,11 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import TarefaItem from './TarefaItem';
 import AsyncStorage from "@react-native-community/async-storage";
 import AdicionarTarefa from './AdicionarTarefa'; // Importar o componente AdicionarTarefa
-
-interface Tarefa {
-  id: number;
-  tarefa: string;
-}
+import { Tarefa } from "../interfaces/ListaTarefas.interface"
 
 const ListaTarefas: React.FC = () => {
   const [tarefas, setTarefas] = useState<Tarefa[]>([]);

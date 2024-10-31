@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import { Box, Text, IconButton, Input, HStack, Button, Modal, Center } from 'native-base';
 import { AntDesign, MaterialIcons } from '@expo/vector-icons';
-
-interface TarefaItemProps {
-  id: number;
-  titulo: string;
-  onUpdate: (id: number, tarefa: string) => void;
-  onDelete: (id: number) => Promise<void>;
-}
+import { TarefaItemProps } from "../interfaces/TarefaItem.interface"
 
 const TarefaItem: React.FC<TarefaItemProps> = ({ id, titulo, onUpdate, onDelete }) => {
   const [isEditMode, setIsEditMode] = useState(false); // Nome mais descritivo
