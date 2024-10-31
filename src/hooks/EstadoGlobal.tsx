@@ -1,21 +1,6 @@
 import AsyncStorage from '@react-native-community/async-storage';
 import React, { createContext, useContext, useState, useEffect } from 'react';
-
-// Interface que define a estrutura de uma tarefa
-interface Tarefa {
-  id: number;
-  titulo: string;
-}
-
-// Interface que define o contexto global de estado
-interface ContextoEstadoGlobal {
-  tarefas: Tarefa[];
-  carregarTarefas: () => void;
-  adicionarTarefa: (titulo: string) => Promise<void>; // Modificado para ser async
-  editarTarefa: (id: number, novoTitulo: string) => void;
-  excluirTarefa: (id: number) => void;
-  carregando: boolean;
-}
+import { Tarefa, ContextoEstadoGlobal  } from "../interfaces/EstadoGlobal.interface";
 
 // Cria o contexto global de estado
 const ContextoEstadoGlobal = createContext<ContextoEstadoGlobal>({

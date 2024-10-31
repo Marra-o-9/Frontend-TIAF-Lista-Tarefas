@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, Text, IconButton, Input, HStack, Button, Modal, Center } from 'native-base';
 import { AntDesign, MaterialIcons } from '@expo/vector-icons';
-import { TarefaItemProps } from "../interfaces/TarefaItem.interface"
+import { TarefaItemProps } from "../interfaces/TarefaItem.interface";
 
 const TarefaItem: React.FC<TarefaItemProps> = ({ id, titulo, onUpdate, onDelete }) => {
   const [isEditMode, setIsEditMode] = useState(false); // Nome mais descritivo
